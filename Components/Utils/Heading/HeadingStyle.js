@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const HeadingStyle = styled.div`
 display: flex;
 justify-content: space-between;
-padding: 10px 7rem;
+padding: 2rem 7rem;
 align-items: center;
 
 h1{
@@ -27,6 +27,13 @@ padding: 10px 1rem;
     
 h1{
   font-size: 1.5rem;
+}
+ }
+@media screen and (max-width: 500px){
+padding: 10px 1rem;
+    
+h1{
+  font-size: 1.2rem;
 }
  }
 

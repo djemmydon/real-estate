@@ -1,43 +1,45 @@
+import Link from "next/link";
 import React from "react";
-import { Card } from "../../../UI/Card/Card";
+import { urlFor } from "../../../../pages/lib/client";
+import { Card, Card2 } from "../../../UI/Card/Card";
 import Heading from "../../../Utils/Heading/Heading";
 import { FeatureFlex } from "./FeatureStyle";
 
-function Feature() {
+export function Feature({ home }) {
   return (
     <div>
       <Heading title="Popular Properties." smallTtitle="Best Choice" />
 
       <FeatureFlex>
-        <Card
-          src="/House Images/home1.jpg"
-          name="Three bedrooms Flat"
-          address="253 Montril Street, New York "
-          date="March 8, 2022"
-          price="$20,000"
-          consist=""
-        />
+        {home?.map((item) => (
 
-        <Card
-          src="/House Images/home2.jpg"
-          name="Three bedrooms Flat"
-          address="253 Montril Street, New York "
-          date="March 8, 2022"
-          price="$30,000"
-          consist=""
-        />
-
-        <Card
-          src="/House Images/home1.jpg"
-          name="Three bedrooms Flat"
-          address="253 Montril Street, New York "
-          date="March 8, 2022"
-          price="$25,000"
-          consist=""
-        />
+     
+         <Card
+         _id={item._id}
+            src={urlFor(item.mainImage)}
+            name={item.title}
+            address={item.address}
+            price={item.price.toLocaleString("en-US")}
+          />
+      
+         
+        ))}
       </FeatureFlex>
     </div>
   );
 }
 
-export default Feature;
+export function Cities() {
+  return (
+    <div>
+      <Heading title="Find Your Neighborhood." smallTtitle="Explore Cities" />
+
+      <FeatureFlex>
+        <Card2 src="/House Images/home2.jpg" name="John Doe" property="3" />
+        <Card2 src="/House Images/home2.jpg" name="John Doe" property="3" />
+        <Card2 src="/House Images/home2.jpg" name="John Doe" property="3" />
+        <Card2 src="/House Images/home2.jpg" name="John Doe" property="3" />
+      </FeatureFlex>
+    </div>
+  );
+}

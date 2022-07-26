@@ -98,3 +98,65 @@ export const CardBig = styled.div`
   }
   }
 `;
+
+
+
+export const CardSmall = styled.div`
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px 0 rgb(0 0 0 / 10%);
+  overflow: hidden;
+  margin: 10px;
+  transition: all 0.5s;
+
+
+  .card_text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    background-color: white;
+    overflow: hidden;
+    z-index: 10;
+    position: relative;
+
+    h1 {
+      font-size: 1.5rem;
+      color: #01614e;
+      font-weight: 400;
+      font-family: var(--lora-font);
+    }
+
+    h2{
+        font-size: 1.3rem;
+      color: #01614e;
+      font-weight: 400;
+    }
+
+    h5 {
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: var(--karla-font);
+      color: var(--orange-color);
+    }
+
+
+  }
+
+
+  .card_image {
+    max-width: 100%;
+    height: 300px;
+    transition: all 0.5s;
+    img {
+      max-width: 100%;
+      height: 100%;
+      position: relative;
+    transition: all 0.2s;
+    object-fit: cover;
+
+    }
+  }
+`
