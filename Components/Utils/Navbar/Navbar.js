@@ -5,11 +5,11 @@ import { Navbody, NavFlex, NavMobile } from "./NavbarStyle";
 import "boxicons";
 
 function Navbar() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   //Opem modal for Nav
   const openMenuHandler = () => {
-    setOpen(!open);
+    setOpen(true);
   };
 
   return (
