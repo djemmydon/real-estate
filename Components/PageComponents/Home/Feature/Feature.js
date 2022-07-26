@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { urlFor } from "../../../../pages/lib/client";
+import { urlFor } from "../../../../lib/client";
 import { Card, Card2 } from "../../../UI/Card/Card";
 import Heading from "../../../Utils/Heading/Heading";
 import { FeatureFlex } from "./FeatureStyle";

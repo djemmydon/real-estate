@@ -4,7 +4,7 @@ import {
   Feature,
 } from "../Components/PageComponents/Home/Feature/Feature";
 import { Hero, Provide } from "../Components/PageComponents/Home/Hero/Hero";
-import { client } from "./lib/client";
+import { client } from "../lib/client";
 
 export default function Home({allProperty}) {
   console.log(allProperty);
