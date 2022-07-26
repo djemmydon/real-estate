@@ -9,7 +9,7 @@ function Navbar() {
 
   //Opem modal for Nav
   const openMenuHandler = () => {
-    setOpen(true);
+    setOpen(!open);
   };
 
   return (
