@@ -38,3 +38,21 @@ h1{
  }
 
 `
+
+
+export const  HeadingStyleSmall = styled.div`
+h6{
+    color: var(--green-color);
+    font-family: var(--lora-font);
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding:1rem 0;
+
+    span{
+    
+      font-size: 30px;
+      color: var(--orange-color);
+    }
+}
+
+`

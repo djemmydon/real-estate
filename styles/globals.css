@@ -12,6 +12,7 @@ body {
 :root{
   --orange-color:#ff6500;
   --green-color:#01614e;
+  --light-green-color:#06c7a041;
   --bg-color:#fff6f0;
   --lora-font: 'Lora', serif;
   --karla-font: 'Karla', sans-serif;
@@ -21,6 +22,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:active{
+  color: none;
 }
 
 * {

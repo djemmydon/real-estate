@@ -3,14 +3,42 @@ import styled from "styled-components";
 export const Navbody = styled.div`
   background-color: var(--bg-color);
   width: 100%;
-  height: 130px;
+  height: 160px;
+`;
+export const NavTop = styled.div`
+  background-color: var(--green-color);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 0 1rem;
+  color:white;
+  font-family: var(--karla-font);
+
+  p{
+    font-size: 1rem;
+
+
+    @media screen and (max-width: 600px){
+    font-size: 0.7rem;
+      
+    }
+  }
+
+  a{
+    transition: 0.3s;
+    &:hover{
+      color: var(--orange-color);
+    }
+  }
 `;
 
 export const NavFlex = styled.div`
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 2rem 2rem;
+  padding: 1.4rem 2rem;
   position: relative;
 
   .logo {
@@ -68,11 +96,13 @@ export const NavFlex = styled.div`
 
 export const NavMobile = styled.div`
   .not_active.active {
-    transform: scaleY(1);
+    transform: scale(1) ;
+
   }
 
   .not_active {
-    transform: scaleY(0);
+    overflow: hidden;
+    transform: scale(0);
     display: flex;
     flex-direction: column;
     top: 5rem;

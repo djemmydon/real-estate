@@ -9,5 +9,6 @@ export const FeatureFlex = styled.div`
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
+margin: 2rem 0;
 `
 

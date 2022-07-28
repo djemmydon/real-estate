@@ -12,17 +12,14 @@ export function Feature({ home }) {
 
       <FeatureFlex>
         {home?.map((item) => (
-
-     
-         <Card
-         _id={item._id}
+          <Card
+            _id={item._id}
+            key={item._id}
             src={urlFor(item.mainImage)}
             name={item.title}
             address={item.address}
             price={item.price.toLocaleString("en-US")}
           />
-      
-         
         ))}
       </FeatureFlex>
     </div>
@@ -32,13 +29,13 @@ export function Feature({ home }) {
 export function Cities() {
   return (
     <div>
-      <Heading title="Find Your Neighborhood." smallTtitle="Explore Cities" />
+      <Heading title="Top Agencies" smallTtitle="Explore Agencies" />
 
       <FeatureFlex>
-        <Card2 src="/House Images/home2.jpg" name="John Doe" property="3" />
-        <Card2 src="/House Images/home2.jpg" name="John Doe" property="3" />
-        <Card2 src="/House Images/home2.jpg" name="John Doe" property="3" />
-        <Card2 src="/House Images/home2.jpg" name="John Doe" property="3" />
+        <Card2 src="/People Images/user3.jpg" name="John Doe" property="3" />
+        <Card2 src="/People Images/user1.jpg" name="Mathew Biodun" property="5" />
+        <Card2 src="/People Images/user2.jpg" name="Ada Baby" property="7" />
+        <Card2 src="/People Images/user3.jpg" name="Sam Loko" property="10" />
       </FeatureFlex>
     </div>
   );
