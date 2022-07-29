@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { filterData, getFilterValues } from "./SearchData";
 import { NotFound, SearchBody, SearchFLex, SearchSelect } from "./SearchStyle";
 import { useRouter } from "next/router";
-import { Card } from "../../UI/Card/Card";
+import { Card, Card2, Card3 } from "../../UI/Card/Card";
 import { urlFor } from "../../../lib/client";
 import Heading from "../../Utils/Heading/Heading";
+import moment from "moment";
 
 function SearchFilter({ property }) {
   const [filterSearch, setFilterSearch] = useState(filterData);
@@ -40,6 +41,7 @@ function SearchFilter({ property }) {
           {filterSearch.map((item) => (
             <SearchSelect key={item.queryName}>
               <select
+           
                 onChange={(e) =>
                   propertyFilterHandler({ [item.queryName]: e.target.value })
                 }
@@ -57,19 +59,22 @@ function SearchFilter({ property }) {
 
         <SearchFLex>
           {property?.map((item) => (
-            <Card
+            <Card3
               _id={item._id}
               key={item._id}
               src={urlFor(item.mainImage)}
               name={item.title}
               address={item.address}
+              bedroom={item.bedroom}
+              bathroom={item.bathroom}
               price={item.price.toLocaleString("en-US")}
+              date={item.createdAt}
             />
           ))}
         </SearchFLex>
 
         <SearchFLex>
-          {property?.lenght === 0 && (
+          {property?.length == 0 && (
             <NotFound>
               <div>
                 <h1>No Property Found</h1>

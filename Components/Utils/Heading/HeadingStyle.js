@@ -19,6 +19,10 @@ p{
     font-family: var(--karla-font);
 }
 h5{
+  margin: 0;
+    color: var(--green-color);
+    font-family: var(--karla-font);
+    font-weight: 400;
 
 }
 
@@ -26,7 +30,7 @@ h5{
 padding: 10px 1rem;
     
 h1{
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
  }
 @media screen and (max-width: 500px){
@@ -34,6 +38,10 @@ padding: 10px 1rem;
     
 h1{
   font-size: 1.2rem;
+}
+
+p{
+  font-size: 0.8rem;
 }
  }
 

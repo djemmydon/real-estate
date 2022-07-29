@@ -40,6 +40,8 @@ export const getStaticProps = async ({ params: { id } }) => {
     extrasrc,
     mainImage,
     description,
+    bathroom,
+    bedroom,
 
     author -> {
       name,

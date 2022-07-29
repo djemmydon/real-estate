@@ -41,6 +41,10 @@ export const NavFlex = styled.div`
   padding: 1.4rem 2rem;
   position: relative;
 
+  @media screen and (max-width: 800px) {
+    padding: 1.4rem 0.6rem;
+  
+    }
   .logo {
     width: 90px;
 

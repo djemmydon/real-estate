@@ -64,22 +64,22 @@ function Navbar() {
           <div className={open ? "active not_active" : "not_active"}>
             <ul>
               <Link href="/">
-                <a>Home</a>
+                <a onClick={openMenuHandler}>Home</a>
               </Link>
               <Link href="/products">
-                <a>Properties</a>
+                <a onClick={openMenuHandler}>Properties</a>
               </Link>
               <Link href="/#">
-                <a>Blog</a>
+                <a onClick={openMenuHandler}>Blog</a>
               </Link>
               <Link href="/#">
-                <a>About</a>
+                <a onClick={openMenuHandler}>About</a>
               </Link>
               <Link href="/#">
-                <a>Contact</a>
+                <a onClick={openMenuHandler}>Contact</a>
               </Link>
               <Link href="/search">
-                <a>Search</a>
+                <a onClick={openMenuHandler}>Search</a>
               </Link>
             </ul>
 
@@ -96,7 +96,7 @@ function Navbar() {
             <box-icon name="menu" onClick={openMenuHandler}></box-icon>
           )} */}
 
-          <Hamburger color="green"  toggled={open} toggle={setOpen}/>
+          <Hamburger color="green" size={20}  toggled={open} toggle={setOpen}/>
           
         </div>
       </NavFlex>

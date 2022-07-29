@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const SearchBody = styled.div`
-  padding: 3rem 10rem;
+  padding: 3rem 4rem;
 
   @media screen  and (max-width:700px){
-    padding: 3rem 2rem;
+    padding: 3rem 0rem;
   }
 
 
@@ -29,17 +29,14 @@ export const SearchFLex = styled.div`
 `;
 
 export const SearchSelect = styled.div`
-  padding: 10px;
 
   select{
-    width:130px;
+    width:100px;
     height: 30px;
     font-family: var(--karla-font);
     font-size: 1;
-    border-radius: 10px;
     outline: none;
     border:1px solid var(--orange-color) ;
-    padding-inline: 5px;
   }
 `;
 

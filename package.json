@@ -13,10 +13,14 @@
     "@sanity/image-url": "^1.0.1",
     "boxicons": "^2.1.2",
     "hamburger-react": "^2.5.0",
+    "moment": "^2.29.4",
     "next": "12.2.3",
+    "nprogress": "^0.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^5.3.5"
+    "react-icons": "^4.4.0",
+    "styled-components": "^5.3.5",
+    "swiper": "^8.3.2"
   },
   "devDependencies": {
     "eslint": "8.20.0",

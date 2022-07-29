@@ -3,12 +3,16 @@ import { urlFor } from "../../../lib/client";
 import { Card } from "../../UI/Card/Card";
 import Heading from "../../Utils/Heading/Heading";
 import { FeatureFlex } from "../Home/Feature/FeatureStyle";
+import { AllProperty, AllPropertyBody, AllPropertyFlex, AllPropertySideBar } from "./ProductDetails";
 
 function ProductPage({ property }) {
   return <div>
   <Heading title="All Properties." smallTtitle="Best Choice" />
 
-  <FeatureFlex>
+<AllPropertyBody>
+  <AllPropertyFlex>
+
+<AllProperty>
     {property?.map((item) => (
       <Card
         _id={item._id}
@@ -19,7 +23,17 @@ function ProductPage({ property }) {
         price={item.price.toLocaleString("en-US")}
       />
     ))}
-  </FeatureFlex>
+  </AllProperty>
+
+  <AllPropertySideBar>
+    
+  </AllPropertySideBar>
+
+  </AllPropertyFlex>
+
+
+</AllPropertyBody>
+  
   </div>;
 }
 

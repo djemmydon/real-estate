@@ -18,6 +18,8 @@ export const HeroFLex = styled.div`
 
   @media screen and (max-width: 800px) {
     flex-wrap: wrap;
+  padding: 1rem 1rem;
+
   }
 `;
 export const HeroText = styled.div`
