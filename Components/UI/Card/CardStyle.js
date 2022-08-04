@@ -196,6 +196,24 @@ export const CardSmall = styled.div`
       }
     }
   }
+
+  
+  @media screen and (max-width: 600px) {
+    width: 200px;
+    height: 220px;
+
+    .card_image {
+      max-width: 100%;
+      height: 150px;
+      transition: all 0.5s;
+      img {
+        max-width: 100%;
+      }
+      
+    }
+
+    
+  }
 `;
 
 export const CardSmall2 = styled.div`

@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import { urlFor } from "../../../../lib/client";
-import { Card, Card2 } from "../../../UI/Card/Card";
+import { Card, Card2, Card3 } from "../../../UI/Card/Card";
+import { CardSmall, CardSmall2 } from "../../../UI/Card/CardStyle";
 import Heading from "../../../Utils/Heading/Heading";
 import { FeatureFlex } from "./FeatureStyle";
 
@@ -12,7 +13,7 @@ export function Feature({ home }) {
 
       <FeatureFlex>
         {home?.map((item) => (
-          <Card
+          <Card3
             _id={item._id}
             key={item._id}
             src={urlFor(item.mainImage)}

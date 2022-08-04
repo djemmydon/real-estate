@@ -1,8 +1,8 @@
 export const filterData = [
     {
       items: [
-        { name: 'Buy', value: 'for-sale' },
-        { name: 'Rent', value: 'for-rent' },
+        { name: 'For Sale', value: 'for-sale' },
+        { name: 'For Rent', value: 'for-rent' },
       ],
       placeholder: 'Purpose',
       queryName: 'purpose',

@@ -7,7 +7,6 @@ import { Hero, Provide } from "../Components/PageComponents/Home/Hero/Hero";
 import { client } from "../lib/client";
 
 export default function Home({allProperty}) {
-  console.log(allProperty);
   return (
     <div>
       <Head>

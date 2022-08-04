@@ -21,6 +21,9 @@ function ProductPage({ property }) {
         name={item.title}
         address={item.address}
         price={item.price.toLocaleString("en-US")}
+        bedroom ={item.bedroom}
+        bathroom ={item.bathroom}
+        
       />
     ))}
   </AllProperty>

@@ -113,7 +113,6 @@ function Search({ allProperty }) {
   //   filterSearch({ rating: e.target.value });
   // };
 
-  console.log(allProperty);
   return <div>{SearchFilter && <SearchFilter property={allProperty} />}</div>;
 }
 
@@ -124,6 +123,7 @@ export const getServerSideProps = async ({ query }) => {
   // const rentFrequency = query.rentFrequency || "yearly";
   const minPrice = query.price || 0;
   const maxPrice = query.maxPrice || 1000000;
+
   const roomsMin = query.roomsMin || "0";
   const bathsMin = query.bathsMin || "0";
   const sort = query.sort || "price-desc";
@@ -131,7 +131,7 @@ export const getServerSideProps = async ({ query }) => {
   // const locationExternalIDs = query.locationExternalIDs || '5002';
   // const categoryExternalID = query.categoryExternalID || '4';
 
-  const url1 = ` *[_type == 'post'  && price >= ${minPrice} && price <= ${maxPrice} && bedroom >= ${roomsMin}  && bathroom >=${bathsMin}    ] {
+  const url1 = ` *[_type == 'post'  && price >= ${minPrice} && price <= ${maxPrice} && bedroom >= ${roomsMin}  && bathroom >=${bathsMin}  ] {
     
     title,
     extrasrc,

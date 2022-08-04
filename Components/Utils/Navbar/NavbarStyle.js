@@ -46,7 +46,8 @@ export const NavFlex = styled.div`
   
     }
   .logo {
-    width: 90px;
+    width: 50px;
+    margin: 10px;
 
     @media screen and (max-width: 800px) {
       width: 70px;
@@ -68,7 +69,7 @@ export const NavFlex = styled.div`
 
       a {
         padding-left: 2rem;
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         font-weight: 200;
         font-family: var(--lora-font);
         transition: all 0.3s;
