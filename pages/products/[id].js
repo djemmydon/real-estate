@@ -2,6 +2,7 @@ import React from "react";
 import PropertiesDetails from "../../Components/PageComponents/PropertyDetails/PropertyDetails";
 import { client } from "../../lib/client";
 
+
 function ProductDetails({ posts, trendingPosts }) {
   console.log(trendingPosts);
   return (

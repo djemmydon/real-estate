@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const CardBig = styled.div`
-  height:200px;
-  max-width: 100%;
+  height: 200px;
+  width: 100%;
 
   background-color: white;
   border-radius: 10px;
@@ -70,19 +70,39 @@ export const CardBig = styled.div`
       }
     }
 
-    .card_bottom{
+    .card_bottom {
       display: flex;
       align-items: center;
       gap: 4px;
 
       margin-top: 1rem;
-      span{
+      span {
         display: flex;
-        align-items:center;
+        align-items: center;
         gap: 2px;
         font-size: 0.8rem;
         font-weight: 400;
         font-family: var(--karla-font);
+      }
+    }
+
+    .purpose_category {
+      display: flex;
+      font-size: 0.8rem;
+      gap: 10px;
+
+      p {
+        color: white;
+        padding: 2px 4px;
+        border-radius: 5px;
+      font-family: var(--karla-font);
+
+      }
+      .orange {
+        background-color: var(--orange-color);
+      }
+      .green {
+        background-color: var(--green-color);
       }
     }
     @media screen and (max-width: 500px) {
@@ -131,7 +151,7 @@ export const CardBig = styled.div`
 
 export const CardSmall = styled.div`
   width: 250px;
-  height: 400px;
+  height: 300px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 15px 0 rgb(0 0 0 / 10%);
@@ -144,6 +164,7 @@ export const CardSmall = styled.div`
     flex-direction: column;
     text-align: center;
     gap: 5px;
+    margin-top: 10px;
     background-color: white;
     overflow: hidden;
     z-index: 10;
@@ -172,7 +193,7 @@ export const CardSmall = styled.div`
 
   .card_image {
     width: 100%;
-    height: 300px;
+    height: 200px;
     transition: all 0.5s;
     img {
       width: 100%;
@@ -197,7 +218,6 @@ export const CardSmall = styled.div`
     }
   }
 
-  
   @media screen and (max-width: 600px) {
     width: 200px;
     height: 220px;
@@ -209,10 +229,11 @@ export const CardSmall = styled.div`
       img {
         max-width: 100%;
       }
-      
     }
+  }
 
-    
+  &:hover .card_image img {
+    transform: rotate(5deg) scale(1.2);
   }
 `;
 

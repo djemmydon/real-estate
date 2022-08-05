@@ -20,14 +20,14 @@ function Navbar() {
         <div>
           <p>
             Have a question?{" "}
-            <Link href="phone:23482377321">
+            <Link href="tel:23482377321">
               <a>+2348 237 7321</a>
             </Link>
           </p>
         </div>
 
         <div>
-          <p>Visit us: 9am to 10 pm ( Mon - Fri)</p>
+          <p>Visit us: 9am to 5pm ( Mon - Fri)</p>
         </div>
       </NavTop>
       <NavFlex>

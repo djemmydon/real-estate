@@ -1,6 +1,11 @@
 import React from "react";
-import ProductPage from "../../Components/PageComponents/Products/Products";
 import { client } from "../../lib/client";
+import dynamic from "next/dynamic";
+
+const ProductPage = dynamic(
+  () => import( "../../Components/PageComponents/Products/Products"),
+  { ssr: false }
+);
 
 function ForSale({ allProperty }) {
   return (
@@ -30,7 +35,36 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params: { slug } }) => {
-  const url1 = `*[_type == 'post' && references(*[_type=="purpose" && slug.current == "${slug}" ]._id) ]`;
+  const url1 = `*[_type == 'post' && references(*[_type=="purpose" && slug.current == "${slug}" ]._id) ] {
+    title,
+    price,
+    extrasrc,
+    mainImage,
+    description,
+    bathroom,
+    bedroom,
+    _createdAt,
+
+    author -> {
+      name,
+      image,
+    },
+    _id,
+  
+   
+    amenities[] -> {
+      title,
+    },
+
+    categories -> {
+      title,
+    },
+
+    purposes-> {
+      title,
+    },
+
+  }`;
 
   const data = await client.fetch(url1);
 

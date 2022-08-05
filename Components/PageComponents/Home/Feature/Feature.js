@@ -6,7 +6,7 @@ import { CardSmall, CardSmall2 } from "../../../UI/Card/CardStyle";
 import Heading from "../../../Utils/Heading/Heading";
 import { FeatureFlex } from "./FeatureStyle";
 
-export function Feature({ home }) {
+export function Feature({ home, category }) {
   return (
     <div>
       <Heading title="Popular Properties." smallTtitle="Best Choice" />
@@ -20,6 +20,7 @@ export function Feature({ home }) {
             name={item.title}
             address={item.address}
             price={item.price.toLocaleString("en-US")}
+            category={item.categories.title}
           />
         ))}
       </FeatureFlex>
@@ -27,16 +28,15 @@ export function Feature({ home }) {
   );
 }
 
-export function Cities() {
+export function Cities({ category }) {
   return (
     <div>
-      <Heading title="Top Agencies" smallTtitle="Explore Agencies" />
+      <Heading title="Top Categories" smallTtitle="Explore Categories" />
 
       <FeatureFlex>
-        <Card2 src="/People Images/user3.jpg" name="John Doe" property="3" />
-        <Card2 src="/People Images/user1.jpg" name="Mathew Biodun" property="5" />
-        <Card2 src="/People Images/user2.jpg" name="Ada Baby" property="7" />
-        <Card2 src="/People Images/user3.jpg" name="Sam Loko" property="10" />
+        {category.map((item) => (
+          <Card2 src={urlFor(item.mainImage) ?? "/People Images/user3.jpg"} name={item.title} key={item._id}/>
+        ))}
       </FeatureFlex>
     </div>
   );

@@ -23,6 +23,9 @@ function ProductPage({ property }) {
         price={item.price.toLocaleString("en-US")}
         bedroom ={item.bedroom}
         bathroom ={item.bathroom}
+        date={new Date(item._createdAt).toLocaleDateString()}
+        category={item.categories.title}
+        purpose={item.purposes.title}
         
       />
     ))}

@@ -1,16 +1,18 @@
 import React from "react";
 import { Card, Card2 } from "../../../Components/UI/Card/Card";
 import { client } from "../../../lib/client";
+import dynamic from "next/dynamic";
+
+const ProductPage = dynamic(
+  () => import("../../../Components/PageComponents/Products/Products"),
+  { ssr: false }
+);
 
 function AllCategory({ posts, trendingPosts }) {
   console.log(trendingPosts.title);
   return (
     <div>
-      {posts.map((item) => (
-        <div key={item._id}>
-      <h1>{item.title}</h1>
-        </div>
-      ))}
+      <ProductPage property={posts} />
     </div>
   );
 }
@@ -35,7 +37,38 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params: { title } }) => {
-  const query = `*[_type == 'post' && references(*[_type=="category" && title == "${title}" ]._id)]`;
+  const query = `*[_type == 'post' && references(*[_type=="category" && title == "${title}" ]._id)]{
+
+    title,
+    price,
+    extrasrc,
+    mainImage,
+    description,
+    bathroom,
+    bedroom,
+    _createdAt,
+
+    author -> {
+      name,
+      image,
+    },
+    _id,
+  
+   
+    amenities[] -> {
+      title,
+    },
+
+    categories -> {
+      title,
+    },
+
+    purposes-> {
+      title,
+    },
+
+
+  }`;
 
   const trending = `*[_type == 'category' && title == '${title}']`;
   // const trending = `*[_type == 'post']`;

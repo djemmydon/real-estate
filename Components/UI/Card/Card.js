@@ -20,16 +20,24 @@ export function Card(props) {
 
             <h1>{props.name}</h1>
             <h5>{props.address}</h5>
-            <p>Added :{props.date}</p>
+            <p>Added : {props.date}</p>
             <h2>Price : &#x20A6;{props.price}</h2>
-            <span>{new Date(props.date).toString()}</span>
+     
+            
           
           <div className="card_bottom">
             <span><BiBed/>{props.bedroom} Bedroom</span>
             <span><FaShower/>{props.bathroom} Bathroom</span>
             <span><FaToilet/>{props.bedroom} Toilet</span>
           </div>
+
+          <div className="purpose_category">
+              <p className="green">{props.category}</p>
+            <p className="orange">{props.purpose}</p>
+            </div>
           </div>
+
+         
           
         </a>
       </Link>
@@ -42,12 +50,12 @@ export function Card2(props) {
       <div className="card_image">
         <img src={props.src} alt="" />
       </div>
-
-      <div className="card_text">
+      <Link href={`/products/category/${props.name}`}>
+      <a className="card_text">
         <h1>{props.name}</h1>
         <h5>{props.property} Properties</h5>
-      </div>
-
+      </a>
+      </Link>
       <div>
         <div></div>
       </div>

@@ -44,7 +44,7 @@ export const Provide = () => {
             choose here and enjoy huge discount.
           </p>
 
-          <Button name="Contact Us" />
+          <Button name="Explore" />
         </HeroText>
       </HeroFLex>
     </HeroBody>
