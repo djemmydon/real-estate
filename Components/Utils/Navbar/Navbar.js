@@ -21,7 +21,7 @@ function Navbar() {
           <p>
             Have a question?{" "}
             <Link href="tel:23482377321">
-              <a>+2348 237 7321</a>
+              <a>+23481 237 7321</a>
             </Link>
           </p>
         </div>
@@ -76,10 +76,10 @@ function Navbar() {
               </Link>
 
               <Link href="/purpose/for-sale">
-                <a>For Sale</a>
+                <a onClick={openMenuHandler}>For Sale</a>
               </Link>
               <Link href="/purpose/for-rent">
-                <a>For Rent</a>
+                <a onClick={openMenuHandler}>For Rent</a>
               </Link>
               <Link href="/#">
                 <a onClick={openMenuHandler}>About</a>

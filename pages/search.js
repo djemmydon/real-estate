@@ -42,7 +42,7 @@ export const getServerSideProps = async ({ query }) => {
   // const locationExternalIDs = query.locationExternalIDs || '5002';
   // const categoryExternalID = query.categoryExternalID || '4';
 
-  const url1 = ` *[_type == 'post'  && price >= ${minPrice} && price <= ${maxPrice} && bedroom >= ${roomsMin}  && bathroom >=${bathsMin}  ] {
+  const url1 = ` *[_type == 'post'  && price >= ${minPrice} && price <= ${maxPrice} && bedroom >= ${roomsMin}  && bathroom >=${bathsMin}    ] {
     
     title,
     extrasrc,
@@ -52,7 +52,7 @@ export const getServerSideProps = async ({ query }) => {
     bathroom,
     bedroom,
     address,
- _id,
+    _id,
   
 
     author -> {

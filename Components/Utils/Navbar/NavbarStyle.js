@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Navbody = styled.div`
   background-color: var(--bg-color);
   width: 100%;
-  height: 160px;
+  height: 120px;
+  padding: 0 0  20px; 
 `;
 export const NavTop = styled.div`
   background-color: var(--green-color);
@@ -38,20 +39,18 @@ export const NavFlex = styled.div`
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 1.4rem 2rem;
+  padding: 0.4rem 2rem;
   position: relative;
 
   @media screen and (max-width: 800px) {
-    padding: 1.4rem 0.6rem;
+    padding: 0.4rem 0.6rem;
   
     }
   .logo {
     width: 50px;
     margin: 10px;
 
-    @media screen and (max-width: 800px) {
-      width: 70px;
-    }
+
 
     img {
       width: 100%;

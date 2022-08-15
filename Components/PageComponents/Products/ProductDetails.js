@@ -18,7 +18,7 @@ export const AllPropertyFlex = styled.div`
 }
 `;
 export const AllProperty = styled.div`
-  min-width: 20%;
+  
 `;
 export const AllPropertySideBar = styled.div`
   min-width: 30%;

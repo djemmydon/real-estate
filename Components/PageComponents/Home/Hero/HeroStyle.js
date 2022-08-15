@@ -15,11 +15,11 @@ export const HeroFLex = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
+  gap: 30px;
 
   @media screen and (max-width: 800px) {
     flex-wrap: wrap;
-  padding: 1rem 1rem;
-
+    padding: 1rem 1rem;
   }
 `;
 export const HeroText = styled.div`
@@ -60,9 +60,11 @@ export const HeroText = styled.div`
 `;
 
 export const HeroImage = styled.div`
-  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
 
   img {
     max-width: 100%;
+    border-radius: 10px;
   }
 `;

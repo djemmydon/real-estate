@@ -11,7 +11,7 @@ export const CardBig = styled.div`
   margin: 10px;
   transition: all 0.5s;
   @media screen and (max-width: 500px) {
-    height: 350px;
+    height: 23rem;
     width: 350px;
   }
   @media screen and (max-width: 350px) {
@@ -93,7 +93,7 @@ export const CardBig = styled.div`
 
       p {
         color: white;
-        padding: 2px 4px;
+        padding: 0.3rem 0.93rem;
         border-radius: 5px;
       font-family: var(--karla-font);
 

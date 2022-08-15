@@ -18,7 +18,7 @@ export const Hero = () => {
         </HeroText>
 
         <HeroImage>
-          <img src="/Assets/hero.png" alt="" />
+          <img src="/Assets/givingkey.jpg" alt="" />
         </HeroImage>
       </HeroFLex>
     </HeroBody>
