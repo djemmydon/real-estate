@@ -1,5 +1,6 @@
 import React from "react";
 import { urlFor } from "../../../lib/client";
+import Button from "../../UI/Button/Button";
 import { Card } from "../../UI/Card/Card";
 import Heading from "../../Utils/Heading/Heading";
 import { FeatureFlex } from "../Home/Feature/FeatureStyle";
@@ -29,6 +30,7 @@ function ProductPage({ property }) {
         
       />
     ))}
+
   </AllProperty>
 
   <AllPropertySideBar>

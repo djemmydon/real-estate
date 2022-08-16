@@ -30,7 +30,7 @@ export const Provide = () => {
     <HeroBody>
       <HeroFLex className="provide__flex">
         <HeroImage className="provide__image">
-          <img src="/Assets/provide.png" alt="" />
+          <img src="/Assets/provides.jpg" alt="" />
         </HeroImage>
 
         <HeroText>

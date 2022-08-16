@@ -1,10 +1,11 @@
 import Link from "next/link";
 import React from "react";
 import { urlFor } from "../../../../lib/client";
+import Button from "../../../UI/Button/Button";
 import { Card, Card2, Card3 } from "../../../UI/Card/Card";
 import { CardSmall, CardSmall2 } from "../../../UI/Card/CardStyle";
 import Heading from "../../../Utils/Heading/Heading";
-import { FeatureFlex } from "./FeatureStyle";
+import { ButtonP, FeatureFlex } from "./FeatureStyle";
 
 export function Feature({ home, category }) {
   return (
@@ -24,6 +25,12 @@ export function Feature({ home, category }) {
           />
         ))}
       </FeatureFlex>
+
+<ButtonP >
+<Button name="See more"  />
+  
+</ButtonP>
+ 
     </div>
   );
 }

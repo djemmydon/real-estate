@@ -10,12 +10,12 @@ export const CardBig = styled.div`
   overflow-y: hidden;
   margin: 10px;
   transition: all 0.5s;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 700px) {
     height: 23rem;
     width: 350px;
   }
-  @media screen and (max-width: 350px) {
-    height: 350px;
+  @media screen and (max-width: 370px) {
+
     width: 250px;
   }
   a {
@@ -56,6 +56,20 @@ export const CardBig = styled.div`
         font-size: 0.8rem;
         font-family: var(--lora-font);
       }
+
+      @media screen and (max-width:370px) {
+
+        
+      h1 {
+        font-size: 0.7rem;
+       
+      }
+
+      h2 {
+        font-size: 1rem;
+       
+      }
+      }
     }
 
     .card_image {
@@ -84,6 +98,17 @@ export const CardBig = styled.div`
         font-weight: 400;
         font-family: var(--karla-font);
       }
+
+      @media screen and (max-width:350px) {
+        span {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        font-size: 0.6rem;
+        font-weight: 400;
+        font-family: var(--karla-font);
+      }
+      }
     }
 
     .purpose_category {
@@ -105,7 +130,7 @@ export const CardBig = styled.div`
         background-color: var(--green-color);
       }
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 700px) {
       width: 100%;
       height: 300px;
       flex-direction: column;

@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 
 export const SmallButton = styled.button`
-    padding: 10px 10px;
+    padding: 0.6rem 2rem;
     border: none;
     background-color:var(--green-color);
     font-family: var(--lora-font);

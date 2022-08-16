@@ -11,8 +11,7 @@ function Heading(props) {
             <h1>{props.title}</h1>
         </div>
         <div>
-        <h5>Exploare all </h5>
-            
+        
         </div>
     </HeadingStyle>
   )

@@ -18,7 +18,8 @@ export const AllPropertyFlex = styled.div`
 }
 `;
 export const AllProperty = styled.div`
-  
+  display: flex;
+  flex-direction: column;
 `;
 export const AllPropertySideBar = styled.div`
   min-width: 30%;

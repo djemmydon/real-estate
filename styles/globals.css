@@ -27,7 +27,7 @@ a {
   text-decoration: none;
 }
 
-a:active{
+a:active {
   color: none;
 }
 
@@ -39,4 +39,27 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
+}
+
+.mySwiper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (max-width: 500px) {
+  .mySwiper {
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+  }
 }
