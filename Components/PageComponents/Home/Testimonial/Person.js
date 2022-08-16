@@ -9,6 +9,8 @@ position: relative;
 
   @media screen and (max-width:500px) {
     max-width: 100%;
+  margin: 1rem auto;
+
   }
 `;
 const TextSide = styled.div`
