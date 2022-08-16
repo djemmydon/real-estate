@@ -43,8 +43,8 @@ border-radius: 10rem;
 `
 
 const NameAbout =styled.div`
-width: 150px;
-height: 60px;
+width: 120px;
+height: 50px;
 box-shadow: 0 2px 15px 0 rgb(0 0 0 / 10%);
 position: absolute;
 right:0;
