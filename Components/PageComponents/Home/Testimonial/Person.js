@@ -8,9 +8,8 @@ position: relative;
   margin: 4rem auto;
 
   @media screen and (max-width:500px) {
-    max-width: 100%;
-  margin: 1rem auto;
-
+    width: 100%;
+    
   }
 `;
 const TextSide = styled.div`
