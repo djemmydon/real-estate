@@ -11,14 +11,18 @@
   "dependencies": {
     "@sanity/client": "^3.3.2",
     "@sanity/image-url": "^1.0.1",
+    "axios": "^0.27.2",
     "boxicons": "^2.1.2",
     "hamburger-react": "^2.5.0",
     "moment": "^2.29.4",
+    "nc": "^1.0.3",
     "next": "12.2.3",
+    "next-connect": "^0.13.0",
     "nprogress": "^0.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
+    "react-spinners": "^0.13.4",
     "styled-components": "^5.3.5",
     "swiper": "^8.3.2"
   },

@@ -13,7 +13,6 @@ import styled from "styled-components";
 import Heading from "../../../Utils/Heading/Heading";
 
 const Body = styled.div`
-  height: 300px;
   margin: 0 2rem;
 
   @media screen and (max-width:500px) {

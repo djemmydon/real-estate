@@ -8,6 +8,12 @@ export const AllPropertyBody = styled.div`
 
 `;
 
+export const Loading = styled.div`
+display: flex;
+justify-content: center;
+height: 50vh;
+`
+
 export const AllPropertyFlex = styled.div`
   display: flex;
   justify-content: center;

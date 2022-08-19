@@ -4,6 +4,7 @@ import {
   Feature,
 } from "../Components/PageComponents/Home/Feature/Feature";
 import { Hero, Provide } from "../Components/PageComponents/Home/Hero/Hero";
+import Priority from "../Components/PageComponents/Home/Priority/Priority";
 import Testimonial from "../Components/PageComponents/Home/Testimonial/Testimonial";
 import { client } from "../lib/client";
 
@@ -21,6 +22,7 @@ export default function Home({allProperty, category}) {
         <Feature  home={allProperty} />
         <Provide  />
         <Cities category={category}/>
+        <Priority/>
         <Testimonial/>
       </main>
     </div>
