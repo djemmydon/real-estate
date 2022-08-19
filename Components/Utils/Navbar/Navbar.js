@@ -41,14 +41,20 @@ function Navbar() {
               <a>Home</a>
             </Link>
             <Link href="/products">
-              <a>Properties</a>
-            </Link>
-            <Link href="/purpose/for-sale">
+              <a>Properties
+
+        <div className="sub_nav">
+        <Link href="/purpose/for-sale">
               <a>For Sale</a>
             </Link>
             <Link href="/purpose/for-rent">
               <a>For Rent</a>
             </Link>
+        </div>
+            
+              </a>
+            </Link>
+          
             <Link href="/#">
               <a>About</a>
             </Link>

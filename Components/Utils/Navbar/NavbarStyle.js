@@ -4,7 +4,7 @@ export const Navbody = styled.div`
   background-color: var(--bg-color);
   width: 100%;
   height: 120px;
-  padding: 0 0  20px; 
+  padding: 0 0 20px;
 `;
 export const NavTop = styled.div`
   background-color: var(--green-color);
@@ -12,24 +12,22 @@ export const NavTop = styled.div`
   height: 40px;
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   padding: 0 1rem;
-  color:white;
+  color: white;
   font-family: var(--karla-font);
 
-  p{
+  p {
     font-size: 1rem;
 
-
-    @media screen and (max-width: 600px){
-    font-size: 0.7rem;
-      
+    @media screen and (max-width: 600px) {
+      font-size: 0.7rem;
     }
   }
 
-  a{
+  a {
     transition: 0.3s;
-    &:hover{
+    &:hover {
       color: var(--orange-color);
     }
   }
@@ -44,13 +42,10 @@ export const NavFlex = styled.div`
 
   @media screen and (max-width: 800px) {
     padding: 0.4rem 0.6rem;
-  
-    }
+  }
   .logo {
     width: 50px;
     margin: 10px;
-
-
 
     img {
       width: 100%;
@@ -72,9 +67,41 @@ export const NavFlex = styled.div`
         font-weight: 200;
         font-family: var(--lora-font);
         transition: all 0.3s;
+        position: relative;
 
         &:hover {
           color: var(--orange-color);
+        }
+      }
+
+      a:hover > .sub_nav {
+        display: block;
+        perspective: 100%;
+      display: flex;
+
+      }
+    }
+
+    .sub_nav {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-color);
+      height: 100px;
+      width: 200px;
+      gap: 12px;
+      justify-content: center;
+      display: none;
+      transition: all 0.3s;
+
+      a {
+        padding: 3px 20px;
+        color: black;
+        font-size: 1rem;
+
+        &:hover {
+          color: var(--orange-color);
+          background-color: white;
         }
       }
     }
@@ -100,8 +127,7 @@ export const NavFlex = styled.div`
 
 export const NavMobile = styled.div`
   .not_active.active {
-    transform: scale(1) ;
-
+    transform: scale(1);
   }
 
   .not_active {
