@@ -9,6 +9,7 @@ import Testimonial from "../Components/PageComponents/Home/Testimonial/Testimoni
 import { client } from "../lib/client";
 
 export default function Home({allProperty, category}) {
+  console.log(process.env.SANITY_PROJECT_ID);
   return (
     <div>
       <Head>

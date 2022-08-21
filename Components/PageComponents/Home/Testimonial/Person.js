@@ -7,18 +7,27 @@ const Body = styled.div`
   max-height: 300px;
   margin: 4rem auto;
 
+  @media screen and (max-width: 500px){
+  width: 100%;
+  max-height: 400px;
+    
+  }
+
 
 `;
 const TextSide = styled.div`
   height: 100px;
   width: 100%;
   padding: 0 10px;
-  box-shadow: 0 2px 15px 0 rgb(0 0 0 / 10%);
+  background: var(--bg-color);
+  border-radius: 10px;
   @media screen and (max-width: 500px) {
     width: 100%;
     margin: 4rem 0;
     max-height: 100%;
     padding: 5px;
+  height: 150px;
+
   }
   p {
     font-size: 0.8rem;
@@ -34,6 +43,12 @@ const Avatar = styled.div`
   height: 60px;
   border: 3px solid var(--orange-color);
   border-radius: 10rem;
+
+  @media screen and (max-width: 500px) {
+    top: 8rem;
+ 
+
+  }
 
   img {
     width: 100%;
@@ -53,6 +68,11 @@ const NameAbout = styled.div`
   border-radius: 10px;
   padding: 5px 10px;
   font-family: var(--karla-font);
+  @media screen and (max-width: 500px) {
+    top: 8rem;
+ 
+
+  }
 
   p {
     margin: 0;
