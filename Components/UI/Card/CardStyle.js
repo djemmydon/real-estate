@@ -40,7 +40,7 @@ export const CardBig = styled.div`
       }
 
       h2 {
-        font-size: 1 rem;
+        font-size: 1rem;
         color: #01614e;
         font-weight: 400;
         font-family: var(--lora-font);
@@ -74,7 +74,7 @@ export const CardBig = styled.div`
     .card_bottom {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 15px;
 
       margin-top: 1rem;
       span {

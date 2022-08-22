@@ -4,13 +4,14 @@ import Button from "../../../UI/Button/Button";
 
 const Body = styled.div`
   max-width: 100%;
-  height: 70vh;
+  height: 100%;
   margin: 2rem 0;
   background-image: url(/Assets/housebg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   position: relative;
+  padding: 2.5rem 0;
 `;
 const ShadowOverlay = styled.div`
   position: absolute;
@@ -28,7 +29,7 @@ const FlexSide = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
+  max-height: 100%;
   padding:0 1rem;
 
   @media screen and (max-width: 900px) {
@@ -62,6 +63,22 @@ const TextSide1 = styled.div`
   @media screen and (max-width: 900px) {
     max-width: 100%;
   }
+
+  @media screen and (max-width: 500px) {
+   
+
+   h1 {
+     font-size: 1.5rem;
+  
+   }
+
+
+
+   p {
+   font-size: 0.8rem;
+   font-family: var(--karla-font);
+ }
+ }
 `;
 const TextSide2 = styled.div`
   display: flex;

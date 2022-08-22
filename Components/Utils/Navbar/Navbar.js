@@ -55,7 +55,7 @@ function Navbar() {
               </a>
             </Link>
           
-            <Link href="/#">
+            <Link href="/about">
               <a>About</a>
             </Link>
             <Link href="/#">
@@ -87,8 +87,8 @@ function Navbar() {
               <Link href="/purpose/for-rent">
                 <a onClick={openMenuHandler}>For Rent</a>
               </Link>
-              <Link href="/#">
-                <a onClick={openMenuHandler}>About</a>
+              <Link href="/about">
+         <a onClick={openMenuHandler}>About</a>
               </Link>
               <Link href="/#">
                 <a onClick={openMenuHandler}>Contact</a>

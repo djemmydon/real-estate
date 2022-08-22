@@ -57,6 +57,24 @@ export const HeroText = styled.div`
       color: var(--green-color);
     }
   }
+  @media screen and (max-width: 500px) {
+   
+
+    h1 {
+      font-size: 1.5rem;
+   
+    }
+
+    .provide_heading{
+      font-size: 1.5rem;
+
+    }
+
+    p {
+    font-size: 0.8rem;
+    font-family: var(--karla-font);
+  }
+  }
 `;
 
 export const HeroImage = styled.div`
