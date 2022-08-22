@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Navbody = styled.div`
   background-color: var(--bg-color);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: fixed;
   z-index:10000;
   width: 100%;
