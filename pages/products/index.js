@@ -1,6 +1,7 @@
 import React from 'react'
 import { client } from '../../lib/client';
 import dynamic from "next/dynamic";
+import HeroForPage from '../../Components/Utils/Hero/HeroForPage';
 
 const ProductPage = dynamic(
   () => import("../../Components/PageComponents/Products/Products"),
@@ -9,7 +10,7 @@ const ProductPage = dynamic(
 function Products({allProperty}) {
   return (
     <div>
-      
+      <HeroForPage name=" Home / Properties" title="All Properties" />
       <ProductPage  property={allProperty}/>
     </div>
   )

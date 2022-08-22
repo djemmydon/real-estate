@@ -4,7 +4,6 @@ import {
   HeroBody,
   HeroFLex,
   HeroImage,
-  HeroImageSmall,
   HeroText,
 } from "./HeroStyle";
 
@@ -14,20 +13,17 @@ export const Hero = () => {
       <HeroFLex>
         <HeroText>
           <span>A new way to find Properties</span>
-          <h1>Delivering High Quality Projects Property Valuation</h1>
+          <h1>The best place to find your dream house</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam,
+            Huge number of propreties availabe here for buy, and sell, also you
+            can find here co-living property, So you have lots of opportunity.
           </p>
 
           <Button name="Contact Us" />
         </HeroText>
 
         <HeroImage>
-          <img src="/Assets/givingkey.jpg" alt="" />
-
-         
+          <img src="/Assets/provide.png" alt="" />
         </HeroImage>
       </HeroFLex>
     </HeroBody>

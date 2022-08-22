@@ -4,8 +4,6 @@ export const HeroBody = styled.div`
   width: 100%;
   min-height: 100%;
 
-  background-color: var(--bg-color);
-
   .provide__flex {
     gap: 50px;
   }
@@ -16,6 +14,7 @@ export const HeroFLex = styled.div`
   align-items: center;
   padding: 1rem 2rem;
   gap: 30px;
+  position: relative;
 
   @media screen and (max-width: 800px) {
     flex-wrap: wrap;
@@ -58,7 +57,6 @@ export const HeroText = styled.div`
     }
   }
 `;
-
 export const HeroImage = styled.div`
   max-width: 100%;
   border-radius: 10px;
@@ -69,15 +67,4 @@ export const HeroImage = styled.div`
     border-radius: 10px;
   }
 `;
-export const HeroImageSmall = styled.div`
-  max-width: 300px;
-  border-radius: 10px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
 
-  img {
-    max-width: 300px;
-    border-radius: 10px;
-  }
-`;

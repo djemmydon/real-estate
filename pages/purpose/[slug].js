@@ -1,15 +1,21 @@
 import React from "react";
 import { client } from "../../lib/client";
 import dynamic from "next/dynamic";
+import HeroForPage from "../../Components/Utils/Hero/HeroForPage";
 
 const ProductPage = dynamic(
-  () => import( "../../Components/PageComponents/Products/Products"),
+  () => import("../../Components/PageComponents/Products/Products"),
   { ssr: false }
 );
 
 function ForSale({ allProperty }) {
   return (
     <div>
+      <HeroForPage
+        name={` Home / Properties / Purpose `}
+        title="All Properties"
+      />
+
       <ProductPage property={allProperty} />
     </div>
   );
@@ -66,7 +72,10 @@ export const getStaticProps = async ({ params: { slug } }) => {
 
   }`;
 
+  const url2 = `*[_type == 'purpose']`;
+
   const data = await client.fetch(url1);
+  const data1 = await client.fetch(url2);
 
   return {
     props: {

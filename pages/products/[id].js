@@ -1,5 +1,7 @@
 import React from "react";
+import { FaHeartBroken } from "react-icons/fa";
 import PropertiesDetails from "../../Components/PageComponents/PropertyDetails/PropertyDetails";
+import HeroForPage from "../../Components/Utils/Hero/HeroForPage";
 import { client } from "../../lib/client";
 
 
@@ -7,6 +9,7 @@ function ProductDetails({ posts, trendingPosts }) {
   console.log(trendingPosts);
   return (
     <div>
+      <HeroForPage name=" Home / Properties / Property Details" title="Property Details" />
       <PropertiesDetails
         propertyDetail={posts}
         trendingProperty={trendingPosts}

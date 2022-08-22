@@ -74,7 +74,7 @@ function Testimonial() {
         responsive={responsive}
         swipeable={true}
         draggable={true}
-        showDots={true}
+       
         autoPlay={true}
         itemClass="carousel-item-padding-40-px"
       >
