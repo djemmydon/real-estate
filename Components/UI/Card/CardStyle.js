@@ -15,6 +15,7 @@ export const CardBig = styled.div`
     width: 350px;
   }
   @media screen and (max-width: 370px) {
+    height: 22rem;
 
     width: 250px;
   }
@@ -39,7 +40,7 @@ export const CardBig = styled.div`
       }
 
       h2 {
-        font-size: 1.3rem;
+        font-size: 1 rem;
         color: #01614e;
         font-weight: 400;
         font-family: var(--lora-font);
@@ -55,20 +56,6 @@ export const CardBig = styled.div`
       p {
         font-size: 0.8rem;
         font-family: var(--lora-font);
-      }
-
-      @media screen and (max-width:370px) {
-
-        
-      h1 {
-        font-size: 0.7rem;
-       
-      }
-
-      h2 {
-        font-size: 1rem;
-       
-      }
       }
     }
 
@@ -99,15 +86,15 @@ export const CardBig = styled.div`
         font-family: var(--karla-font);
       }
 
-      @media screen and (max-width:350px) {
+      @media screen and (max-width: 350px) {
         span {
-        display: flex;
-        align-items: center;
-        gap: 2px;
-        font-size: 0.6rem;
-        font-weight: 400;
-        font-family: var(--karla-font);
-      }
+          display: flex;
+          align-items: center;
+          gap: 2px;
+          font-size: 0.6rem;
+          font-weight: 400;
+          font-family: var(--karla-font);
+        }
       }
     }
 
@@ -120,8 +107,7 @@ export const CardBig = styled.div`
         color: white;
         padding: 0.3rem 0.93rem;
         border-radius: 5px;
-      font-family: var(--karla-font);
-
+        font-family: var(--karla-font);
       }
       .orange {
         background-color: var(--orange-color);
@@ -137,6 +123,7 @@ export const CardBig = styled.div`
 
       .card_text {
         padding: 10px;
+        gap: 3px;
 
         h1 {
           font-size: 1rem;
@@ -168,6 +155,21 @@ export const CardBig = styled.div`
           width: 100%;
 
           height: 100%;
+        }
+      }
+    }
+
+    @media screen and (max-width: 390px) {
+      .card_text {
+        h1 {
+          font-size: 0.8rem;
+        }
+
+        h2 {
+          font-size: 0.7rem;
+        }
+        p {
+          font-size: 0.7rem;
         }
       }
     }

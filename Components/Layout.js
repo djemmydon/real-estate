@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const Body = styled.main`
 position:relative;
-top: 8rem;
+padding-top: 8rem;
 `
 
 const Navbar = dynamic(() => import("./Utils/Navbar/Navbar"), { ssr: false });
