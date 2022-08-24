@@ -26,11 +26,13 @@ export function Feature({ home, category }) {
         ))}
       </FeatureFlex>
 
-<ButtonP >
-<Button name="See more"  />
-  
-</ButtonP>
- 
+      <ButtonP>
+        <Link href="/products">
+          <a>
+            <Button name="See more" />
+          </a>
+        </Link>
+      </ButtonP>
     </div>
   );
 }
@@ -42,7 +44,11 @@ export function Cities({ category }) {
 
       <FeatureFlex>
         {category.map((item) => (
-          <Card2 src={urlFor(item.mainImage) ?? "/People Images/user3.jpg"} name={item.title} key={item._id}/>
+          <Card2
+            src={urlFor(item.mainImage) ?? "/People Images/user3.jpg"}
+            name={item.title}
+            key={item._id}
+          />
         ))}
       </FeatureFlex>
     </div>

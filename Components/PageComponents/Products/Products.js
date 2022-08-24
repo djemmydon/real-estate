@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { urlFor } from "../../../lib/client";
 import Button from "../../UI/Button/Button";
 import { Card } from "../../UI/Card/Card";
 import Heading from "../../Utils/Heading/Heading";
-import { FeatureFlex } from "../Home/Feature/FeatureStyle";
+import { ButtonP, FeatureFlex } from "../Home/Feature/FeatureStyle";
 import {
   AllProperty,
   AllPropertyBody,
@@ -12,8 +12,27 @@ import {
   Loading,
 } from "./ProductDetails";
 import PulseLoader from "react-spinners/PulseLoader";
+import BeatLoader from "react-spinners/BeatLoader";
 
 function ProductPage({ property }) {
+  const [more, setMore] = useState(3);
+  const [loading, setLoading] = useState(false);
+
+  const load = () => {
+    setLoading(true);
+    setMore((prevLoad) => prevLoad + 3);
+    setLoading(false);
+  };
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(true);
+
+  //     setMore();
+  //     setLoading(true);
+  //   }, 300);
+  // }, []);
+
   return (
     <div>
       <Heading title="All Properties." smallTtitle="Best Choice" />
@@ -26,7 +45,7 @@ function ProductPage({ property }) {
         ) : (
           <AllPropertyFlex>
             <AllProperty>
-              {property?.map((item) => (
+              {property?.slice(0, more).map((item) => (
                 <Card
                   _id={item._id}
                   key={item._id}
@@ -42,7 +61,10 @@ function ProductPage({ property }) {
                 />
               ))}
 
-              
+              <ButtonP onClick={load}>
+        
+                <Button name="Load More" />
+              </ButtonP>
             </AllProperty>
             <AllPropertySideBar></AllPropertySideBar>
           </AllPropertyFlex>

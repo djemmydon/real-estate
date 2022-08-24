@@ -14,7 +14,7 @@ export default function Home({allProperty, category}) {
     <div>
       <Head>
         <title>Real Estate</title>
-        <meta name="description" content="Website " />
+        <meta name="description" content="Peculiar real estate is a place where you can get your dream house in Nigeria  " />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

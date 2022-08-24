@@ -1,11 +1,5 @@
 import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { GrLinkPrevious, GrLinkNext } from "react-icons/gr";
-import SwiperCore from "swiper";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 import { Pagination, Navigation } from "swiper";
 import Person from "./Person";
@@ -14,7 +8,7 @@ import Heading from "../../../Utils/Heading/Heading";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 const Body = styled.div`
- padding: 10px;
+  padding: 10px;
 
   @media screen and (max-width: 500px) {
     max-width: 100%;
@@ -39,10 +33,8 @@ const Icon = styled.div`
   justify-content: center;
 `;
 
-SwiperCore.use([Navigation]);
+
 function Testimonial() {
-  const navigationPrevRef = useRef(null);
-  const navigationNextRef = useRef(null);
 
   const responsive = {
     superLargeDesktop: {
@@ -71,12 +63,8 @@ function Testimonial() {
       />
 
       <Carousel
-        responsive={responsive}
-        swipeable={true}
-        draggable={true}
-       
-        autoPlay={true}
-        itemClass="carousel-item-padding-40-px"
+      responsive={responsive}
+      rewind={true}
       >
         <Person />
 
