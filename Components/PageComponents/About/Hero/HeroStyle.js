@@ -25,6 +25,12 @@ export const HeroText = styled.div`
   display: inline;
   padding-top: 10px;
   flex-direction: column;
+  width:500px;
+
+  @media screen and (max-width: 600px) {
+    width:100%;
+
+  }
   span {
     font-size: 1rem;
     font-family: var(--karla-font);
@@ -32,7 +38,7 @@ export const HeroText = styled.div`
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
     font-family: var(--lora-font);
     color: var(--green-color);
@@ -58,12 +64,15 @@ export const HeroText = styled.div`
   }
 `;
 export const HeroImage = styled.div`
-  max-width: 100%;
+  height:500px;
   border-radius: 10px;
   position: relative;
-
+  @media screen and (max-width: 600px) {
+    height:350px;
+  
+  }
   img {
-    max-width: 100%;
+    height: 100%;
     border-radius: 10px;
   }
 `;

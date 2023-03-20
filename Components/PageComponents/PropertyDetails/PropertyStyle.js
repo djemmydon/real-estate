@@ -34,14 +34,18 @@ export const Property = styled.div`
   }
 
   .property_image {
-    width: 100%;
-    height: 400px;
+    width:100%;
+    height: 600px;
     margin: 0 auto;
 
 
-    img {
-      width: 100%;
+    @media screen and (max-width: 600px) {
       height: 400px;
+
+}
+    img {
+      height: 100%;
+      width:100%;
       object-fit: cover;
       border-radius: 5px;
       transition: all 0.5s;

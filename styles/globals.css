@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap");
 
 html,
@@ -14,8 +16,8 @@ body {
   --green-color: #01614e;
   --light-green-color: #06c7a041;
   --bg-color: #fff6f0;
-  --lora-font: "Lora", serif;
-  --karla-font: "Karla", sans-serif;
+  --lora-font: "Raleway", sans-serif;
+  --karla-font: "Titillium Web", sans-serif;
 }
 
 * {
@@ -50,5 +52,3 @@ h6 {
   margin: 0 auto;
   position: relative;
 }
-
-

@@ -25,6 +25,7 @@ export const SearchBody = styled.div`
 export const SearchFLex = styled.div`
   display: flex;
   justify-content: center;
+  gap:1rem;
   flex-wrap: wrap;
 `;
 
@@ -37,6 +38,7 @@ export const SearchSelect = styled.div`
     font-size: 1;
     outline: none;
     border:1px solid var(--orange-color) ;
+    border-radius:5px
   }
 `;
 

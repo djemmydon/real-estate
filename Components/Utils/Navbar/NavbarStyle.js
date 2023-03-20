@@ -4,9 +4,8 @@ export const Navbody = styled.div`
   background-color: var(--bg-color);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: fixed;
-  z-index:10000;
+  z-index:100;
   width: 100%;
-  height: 120px;
   padding: 0 0 20px;
 `;
 export const NavTop = styled.div`
@@ -37,6 +36,7 @@ export const NavTop = styled.div`
 `;
 
 export const NavFlex = styled.div`
+height:100%;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -68,7 +68,7 @@ export const NavFlex = styled.div`
         padding-left: 2rem;
         font-size: 0.9rem;
         font-weight: 200;
-        font-family: var(--lora-font);
+        font-family: var(--karla-font);
         transition: all 0.3s;
         position: relative;
 
@@ -125,6 +125,18 @@ export const NavFlex = styled.div`
     .nav_icons {
       display: block;
     }
+  }
+
+
+  .nav_button{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 800px) {
+    display: none;
+  }
   }
 `;
 

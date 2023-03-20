@@ -4,6 +4,8 @@ import { urlFor } from "../../../lib/client";
 import { Card, Card2, Card3 } from "../../UI/Card/Card";
 import { HeadingStyleSmall } from "../../Utils/Heading/HeadingStyle";
 import HeadingSmall from "../../Utils/Heading/HeadSmall";
+import Button from "../../UI/Button/Button";
+
 import {
   Property,
   PropertyBody,
@@ -82,6 +84,10 @@ function PropertiesDetails({ propertyDetail, trendingProperty }) {
                 <h1>{item.title}</h1>
               </div>
             ))}
+          </div>
+
+          <div className="nav_button">
+            <Button name="+234 1234 345 321" />
           </div>
         </Property>
 

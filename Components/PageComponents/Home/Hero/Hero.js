@@ -21,23 +21,27 @@ export const Hero = () => {
             ad minim veniam,
           </p>
 
-          <Button name="Contact Us" />
+          {/* <div className="search">
+            <input
+              type="text"
+              placeholder="Address, School, City, Zip or Neighborhood
+"
+            />
+          </div> */}
+          {/* <Button name="Contact Us" /> */}
         </HeroText>
 
-        <HeroImage>
-          <img src="/Assets/givingkey.jpg" alt="" />
-
-         
-        </HeroImage>
+        <HeroImage></HeroImage>
       </HeroFLex>
+      <div className="overlay"></div>
     </HeroBody>
   );
 };
 
 export const Provide = () => {
   return (
-    <HeroBody>
-      <HeroFLex className="provide__flex">
+    <div>
+      {/* <HeroFLex className="provide__flex">
         <HeroImage className="provide__image">
           <img src="/Assets/provides.jpg" alt="" />
         </HeroImage>
@@ -55,7 +59,7 @@ export const Provide = () => {
 
           <Button name="Explore" />
         </HeroText>
-      </HeroFLex>
-    </HeroBody>
+      </HeroFLex> */}
+    </div>
   );
 };

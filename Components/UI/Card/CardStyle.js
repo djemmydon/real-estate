@@ -265,14 +265,22 @@ export const CardSmall = styled.div`
 `;
 
 export const CardSmall2 = styled.div`
-  width: 250px;
-  height: 270px;
+  width: 330px;
+  height: 300px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 15px 0 rgb(0 0 0 / 10%);
   overflow: hidden;
   margin: 10px;
   transition: all 0.5s;
+  @media screen and (max-width: 600px) {
+    width: 200px;
+    height: 300px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 150px;
+    height: 300px;
+  }
 
   .card_text {
     display: flex;
@@ -304,6 +312,9 @@ export const CardSmall2 = styled.div`
       font-weight: 400;
       text-decoration: underline;
       font-family: var(--karla-font);
+      @media screen and (max-width: 400px) {
+        display: none;
+      }
     }
 
     p {
@@ -314,7 +325,7 @@ export const CardSmall2 = styled.div`
 
   .card_image {
     width: 100%;
-    height: 150px;
+    height: 180px;
     transition: all 0.5s;
     img {
       width: 100%;

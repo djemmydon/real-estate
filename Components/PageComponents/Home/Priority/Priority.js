@@ -11,45 +11,55 @@ const Body = styled.div`
   background-size: cover;
   background-position: 50% 50%;
   position: relative;
-  padding: 2.5rem 0;
+  padding: 7.5rem 0rem;
 `;
 const ShadowOverlay = styled.div`
+  height: 7.6rem;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 
-  background: rgba(1, 122, 7, 0.493);
+  padding-bottom: 30px;
 `;
 
 const FlexSide = styled.div`
   z-index: 1;
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  max-height: 100%;
-  padding:0 1rem;
+  height: 100%;
+  padding: 0 1rem;
 
   @media screen and (max-width: 900px) {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 `;
 
 const TextSide1 = styled.div`
   width: 600px;
-  
+  height: 100%;
+  padding: 7.5rem 4rem;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   h1 {
     font-family: var(--lora-font);
     font-size: 3rem;
-    color: white;
+    color: black;
   }
 
   p {
     font-family: var(--karla-font);
     font-size: 1.2rem;
-    color: white;
+    color: black;
   }
 
   @media screen and (max-width: 1118px) {
@@ -65,20 +75,15 @@ const TextSide1 = styled.div`
   }
 
   @media screen and (max-width: 500px) {
-   
+    h1 {
+      font-size: 1.5rem;
+    }
 
-   h1 {
-     font-size: 1.5rem;
-  
-   }
-
-
-
-   p {
-   font-size: 0.8rem;
-   font-family: var(--karla-font);
- }
- }
+    p {
+      font-size: 0.8rem;
+      font-family: var(--karla-font);
+    }
+  }
 `;
 const TextSide2 = styled.div`
   display: flex;
@@ -90,7 +95,7 @@ const TextSide2 = styled.div`
   p {
     font-family: var(--karla-font);
     font-size: 1.2rem;
-    color: white;
+    color: black;
   }
 
   @media screen and (max-width: 1118px) {
@@ -119,16 +124,6 @@ function Priority() {
 
           <Button name="Contact Us" />
         </TextSide1>
-
-        <TextSide2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-            Nulla consequat massa quis enim.
-          </p>
-        </TextSide2>
       </FlexSide>
       <ShadowOverlay />
     </Body>

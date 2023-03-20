@@ -41,20 +41,19 @@ function Navbar() {
               <a>Home</a>
             </Link>
             <Link href="/products">
-              <a>Properties
-
-        <div className="sub_nav">
-        <Link href="/purpose/for-sale">
-              <a>For Sale</a>
-            </Link>
-            <Link href="/purpose/for-rent">
-              <a>For Rent</a>
-            </Link>
-        </div>
-            
+              <a>
+                Properties
+                <div className="sub_nav">
+                  <Link href="/purpose/for-sale">
+                    <a>For Sale</a>
+                  </Link>
+                  <Link href="/purpose/for-rent">
+                    <a>For Rent</a>
+                  </Link>
+                </div>
               </a>
             </Link>
-          
+
             <Link href="/about">
               <a>About</a>
             </Link>
@@ -65,12 +64,11 @@ function Navbar() {
               <a>Search</a>
             </Link>
           </ul>
-
-          <div className="nav_button">
-            <Button name="Book Property" />
-          </div>
         </div>
 
+        <div className="nav_button">
+          <Button name="Book Property" />
+        </div>
         <NavMobile>
           <div className={open ? "active not_active" : "not_active"}>
             <ul>
@@ -88,7 +86,7 @@ function Navbar() {
                 <a onClick={openMenuHandler}>For Rent</a>
               </Link>
               <Link href="/about">
-         <a onClick={openMenuHandler}>About</a>
+                <a onClick={openMenuHandler}>About</a>
               </Link>
               <Link href="/#">
                 <a onClick={openMenuHandler}>Contact</a>
